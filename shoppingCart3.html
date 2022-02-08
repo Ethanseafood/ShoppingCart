@@ -18,24 +18,25 @@
     <div class="container-fluid p-3 bg-dark text-white text-center">
         <h1>訂購資訊</h1>
     </div>
-    <div class="container">
-        <form action="https://www.townway.com.tw/auth" method="post">
-            <div class="form-group mt-5 w-50">
+    <div class="container d-flex justify-content-center">
+        <form class='mt-5 row gy-3 gx-3 card p-3 bg-light' action="https://www.townway.com.tw/auth" method="post">
+        
+            <div class="form-group ">
                 <label for="fullName">Full Name:</label>
                 <input type="fullName" class="form-control" id="fullName" placeholder="Enter full name" />
             </div>
 
-            <div class="form-group mt-3 w-50">
+            <div class="form-group mt-3 ">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" />
             </div>
 
-            <div class="form-group mt-3 w-50">
+            <div class="form-group mt-3 ">
                 <label for="username">Username:</label>
                 <input type="text" class="form-control" id="username" placeholder="Enter username" required />
             </div>
 
-            <div class="form-group mt-3 w-25">
+            <div class="form-group mt-3 ">
                 <label for="sel1" class="form-label">District:</label>
                 <select class="form-select" id="sel1" name="sellist1">
                     <option>大安區</option>
@@ -48,33 +49,33 @@
                 </select>
             </div>
 
-            <div class="form-group mt-3 w-50">
+            <div class="form-group mt-3 ">
                 <label for="username">Address:</label>
                 <input type="text" class="form-control" placeholder="Enter address" required />
-            
+            </div>
+            <div class="form-group mt-3 ">
                 <div class="form-check form-check-inline mt-3">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                  <b><label class="form-check-label" for="inlineRadio1">VISA</label></b>  
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <b><label class="form-check-label" for="inlineRadio1">VISA</label></b>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
                     <b><label class="form-check-label" for="inlineRadio2">Mastercard</label></b>
-                  </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                   <b><label class="form-check-label" for="inlineRadio3">Others</label></b>
-                  </div>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                        value="option3">
+                    <b><label class="form-check-label" for="inlineRadio3">Others</label></b>
+                </div>
 
             </div>
-            <a href="#" id="btn" class="btn btn-primary mt-3" tabindex="-1" role="button">Submit</a>
+            <button type="button" class="btn btn-primary">Order</button> 
+        </form>
     </div>
-    </form>
-    </div>
-    <footer class="bg-dark text-light fixed-bottom mt-4">
-        <div class="container">
-            <div class="py-4 text-center">The Worst Place to Shop</div>
-        </div>
-    </footer>
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
